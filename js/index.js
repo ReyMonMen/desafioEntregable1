@@ -52,4 +52,9 @@ while (producto != "666"){
 
 }
 
-alert (`la cantidad de productos es ${cantidad} y el precio final es $${total}`);
+if (cantidad != 0){
+    alert(`la cantidad de productos es ${cantidad} y el precio final es $${total}`);
+}else{
+    alert(`No se ingresaron productos`);
+}
+
