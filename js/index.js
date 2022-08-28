@@ -10,19 +10,20 @@ let iva = 0;
 alert(`Vamos a calcular valores finales de diferentes productos y el valor final de todos sumados hasta que se ingrese 666`);
 
 let ingresoDatos = function () {
+    iva = 0;
     producto = prompt(`Ingrese el nombre del producto`);
     if (producto !== "666"){
         precio = parseInt(prompt(`Ingrese el valor del producto`));
-        iva = parseInt(prompt(`ingrese el valor 1 para un iva del 10.5% y 2 para un iva del 21%`));
-        if ((iva == 1) || (iva == 2)){
-            iva = iva * 10.5
-        }else{
-            alert(`El valor del iva esta mal ingresado`)
-    }
-
-    }
-    
-    
+        while ((iva != 10.5) && (iva != 21)){
+            iva = parseInt(prompt(`ingrese el valor 1 para un iva del 10.5% y 2 para un iva del 21%`));
+            if ((iva == 1) || (iva == 2)){
+                iva = iva * 10.5
+            }else{
+                alert(`El valor del iva esta mal ingresado`);
+            
+            }   
+        }
+    }       
 }
 
 let validacion = function () {
