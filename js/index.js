@@ -7,11 +7,11 @@ let iva = 0;
 
 
 
-alert(`Vamos a calcular valores finales de diferentes productos y el valor final de todos sumados hasta que se ingrese 666`);
+alert(`Vamos a calcular valores finales de diferentes productos y al final la suma de todos los productos validos`);
 
 let ingresoDatos = function () {
     iva = 0;
-    producto = prompt(`Ingrese el nombre del producto`);
+    producto = prompt(`Ingrese el nombre del producto o 666 para finalizar`);
     if (producto !== "666"){
         precio = parseInt(prompt(`Ingrese el valor del producto`));
         while ((iva != 10.5) && (iva != 21)){
